@@ -1,8 +1,8 @@
 import express, { Request, Response } from 'express';
 import { urlencoded } from 'body-parser';
 import twilio from 'twilio';
-import openai from 'openai';
-require('dotenv').config();
+import { config } from 'dotenv';
+config();
 
 const app = express();
 
